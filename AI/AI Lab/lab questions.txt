@@ -1,0 +1,65 @@
+arrange the numbers in ascending order 
+initial :
+4 5 -
+6 1 8
+7 3 2
+target :
+1 2 3
+4 5 6
+7 8 -
+step 1:
+1   6     
+8 5 4 -> 
+7 3 2
+
+Find the sequence of the empty tile moles from the initial game position to the designated target
+position
+4 5       1 2 3
+6 10 8 -> 4 5 6 
+7 3 2     7 8 
+27/09/2022
+In this problem the salesman starts at one point from one place and travels all the places compare to this starting point
+or place.the objective of this problem is to minimize or optimize the cost.the main requirement communication blw two nodes or cities.
+the problem containstwo steps :
+step1 : g(i,phi)=Ci,1 where 1<=i<=n
+step2 : Min{Cij+g(J1 s-{J})
+Q)Find the optimum cost for the given TSP
+0 12 5 7
+11 0 13 6
+4 9 0 18
+10 3 2 0
+LAB-5
+Q)we have 2 water jugs one measures 'x' gallons and the other one measures 'y' gallons
+but there is no measuring level mentioned on either of these jugs i.e. we cannot know the
+exact amount of water filled in the jug.If we want to know how ?
+fill 2 gallons of water in any one of this jugs?
+Q)state space for this problem can be described as the set of ordered pair of integers.
+Here x represents the capacity or quantity of water in 4 gallons i.e,x= 1,2,3,4
+and y represents the capacity or quanity of water in 3 gallons i.e,y= 0,1,2,3
+
+15/11/22
+Searching strategies in ai
+best first search in ai:BFS is an instance of the general research or drop search algorithm
+in which a node is selected for expansion based on an evaluation function f(n).The evaluation
+function is constructed as a cost estimate so the node the lowest evaluation is expanded first.
+Most of the best first search algorithms include as a component of a heuristic function denoted as h(n)
+f(n)=evaluation function
+h(n)=estimated cost of the cheapest path from starting node to goal node
+From node a the next node to be selected is node b.then from node b select node f.since 
+f have no childs backtrack to node b and select node b.....till reaching the goal node
+uniformed Search :[Blind Search]
+BFS
+DFS
+Uniform cost search
+
+
+Greedy best first Search:
+GBFS always selects the path which is best at particular stage.it is combination of bfs and dfs and uses the heuristic function
+to search the next node .The BFS algorithm to expand the node which is closest to goal node and the min cost is estimated by heuristic function
+the evaluation function f(n)=h(n) where h(n) is estimated cost from starting node to goal node.The greedy bfs 
+cost of the path that has already been traversed therfore the solution given is necessarily optimal
+Space and time complexity :
+O(b^m) where b:branching factor
+m: depth of the tree 
+29/11/2022
+Bayesian network in ai
